@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Poseify - Modeling Agency Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Header Start -->
+<div class="container-fluid p-0">
+
+    <nav id="mainNavbar"
+         class="navbar navbar-expand-lg navbar-dark px-lg-5"
+         style="position:fixed; top:0; left:0; right:0; z-index:999;
+                background:transparent;
+                border:none;
+                transition: top 0.4s ease;">
+
+        <!-- LOGO -->
+        <a href="index.html"
+           class="navbar-brand d-flex align-items-center me-5">
+            <img src="img/ll1.jpg"
+                 alt="NCTREES Logo"
+                 style="height:150px;">
+        </a>
+
+        <!-- TOGGLER -->
+        <button type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html"
+                   class="nav-item nav-link active"
+                   style="color:#C9A24D; font-size:1.4rem; font-weight:1000;">
+                    Home
+                </a>
+
+                <a href="contact_kor.html"
+                   class="nav-item nav-link"
+                   style="color:#C9A24D; font-size:1.4rem; font-weight:1000;">
+                    Contact
+                </a>
+
+                <!-- Change language -->
+                <div class="nav-item dropdown">
+                    <a href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown"
+                       style="color:#C9A24D; font-size:1.4rem; font-weight:1000;">
+                        Change language
+                    </a>
+
+                    <div class="dropdown-menu m-0" style="background-color:#111;">
+                        <a href="team.html"
+                           class="dropdown-item"
+                           style="color:#C9A24D; font-size:1.15rem; font-weight:1000;">
+                            TH
+                        </a>
+                        <a href="index.html"
+                           class="dropdown-item"
+                           style="color:#C9A24D; font-size:1.15rem; font-weight:1000;">
+                            EN
+                        </a>
+                        <a href="test.html"
+                           class="dropdown-item"
+                           style="color:#C9A24D; font-size:1.15rem; font-weight:1000;">
+                            KOR
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- กัน navbar fixed บังหัวภาพ -->
+   
+
+    <div style="position:relative; width:100%; min-height:100vh;">
+
+        <!-- Background Image -->
+        <img class="w-100"
+             src="img/ll4.png"
+             alt="Image"
+             style="min-height:100vh; object-fit:cover; display:block;">
+
+        <!-- Black Overlay -->
+        <div style="
+            position:absolute;
+            inset:0;
+            background:rgba(0,0,0,0.45);
+            z-index:1;">
+        </div>
+
+        <!-- Caption -->
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+             style="z-index:2;">
+
+            <div class="title mx-5 px-5 animated slideInDown"
+                 style="margin-top:38px;">
+                <div class="title-center text-center">
+                    <h5 style="font-size:3rem;">환영합니다</h5>
+                    <h1 class="display-1">엔씨 트리 리걸 서비스</h1>
+                </div>
+            </div>
+
+            <p class="fs-5 mb-5 animated slideInDown text-center"
+   style="max-width:900px;
+          margin:0 auto;
+          line-height:1.95;
+          transform: translateY(-30px);">
+              
+                저희는 태국 왕국 전역에서 법률 서비스를 제공합니다.
+                당사의 서비스에는 소송 수행 및 모든 유형의 법적 분쟁에 대한 변호사 대리 업무가 포함되며,
+                소 제기, 답변서 제출을 비롯한 포괄적인 법률 서비스를 제공합니다<br><br>
+
+                당사의 업무 분야에는 민사 및 형사 사건,
+                가족법, 노동법, 이혼 절차, 상속 재산 관리 및 상속 절차,
+                채권 추심, 수표 분쟁, 토지 및 부동산 법률, 회사 등록,
+                계약서 작성, 중재 및 대체적 분쟁 해결 절차 등이 포함됩니다.<br><br>
+
+                또한, 당사는 법률 자문 서비스,
+                법률 문서 번역,
+                그리고 변호사가 제공하는 공증 업무
+                (Notarial Services Attorney)를 제공합니다
+            </p>
+
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5 style="font-size:2.5rem;">제공 서비스</h5>
+                        <h1 style="font-size:4rem;">저희가 도와드리는 방법</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 1 -->
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/r2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight"
+                             data-wow-delay="0.5s"
+                             style="font-size:26px;">
+                            <h3 class="text-uppercase" style="font-size:2rem;">도와드릴 수 있습니다</h3>
+
+                            <p class="mb-4">- 문서 인증 서비스</p>
+                            <p class="mb-4">- 문서 공증 및 서명 인증 서비스</p>
+                            <p class="mb-4">- 대사관 문서 인증 및 대사관 연락 업무</p>
+                            <p class="mb-4">- 공증 선서 진술서 및 공증 확인서</p>
+                            <p class="mb-4">- 공증 사본 인증: 여권, 신분증, 은행 거래 내역서</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/r3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-start wow fadeInLeft"
+                             data-wow-delay="0.5s"
+                             style="font-size:26px;">
+
+                            <h3 class="text-uppercase" style="font-size:2rem;">도와드릴 수 있습니다</h3>
+
+                            <p class="mb-4">- 공증된 서명 인증</p>
+                            <p class="mb-4">- 해외 근무 또는 유학을 위한 공증 서비스</p>
+                            <p class="mb-4">- 해외에서의 사업 수행을 위한 공증 서비스</p>
+                            <p class="mb-4">- 해외 법인 설립 또는 은행 계좌 개설을 위한 공증 서비스</p>
+                            <p class="mb-4">- 사실관계 또는 법률관계에 대한 인증</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/ss1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight"
+                             data-wow-delay="0.5s"
+                             style="font-size:26px;">
+                            <h3 class="text-uppercase" style="font-size:2rem;">도와드릴 수 있습니다</h3>
+                            <p class="mb-4">- 민사 및 형사 소송</p>
+                            <p class="mb-4">- 형사 범죄 (사기, 절도, 강도, 외환 거래 관련 범죄)</p>
+                            <p class="mb-4">- 해외 사업 진행을 위한 문서 공증 서비스</p>
+                            <p class="mb-4">- 행정법</p>
+                            <p class="mb-4">- 이혼 및 가족 분쟁</p>
+                            <p class="mb-4">- 주주 및 회사 간 분쟁</p>
+                            <p class="mb-4">- 노동법 및 고용 관련 법률</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-item service-item-right">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/l44.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-start wow fadeInLeft"
+                             data-wow-delay="0.5s"
+                             style="font-size:26px;">
+
+                            <h3 class="text-uppercase" style="font-size:2rem;">도와드릴 수 있습니다</h3>
+
+                            <p class="mb-4">- 회사 설립 및 기업 구조 설계</p>
+                            <p class="mb-4">- 주주, 이사 및 파트너 간 분쟁</p>
+                            <p class="mb-4">- 상업 계약 및 사업 계약</p>
+                            <p class="mb-4">- 세무 자문 및 조세 분쟁 해결</p>
+                            <p class="mb-4">- 기업 컴플라이언스 및 규제 관련 업무</p>
+                            <p class="mb-4">- 태국 전역 법률 대리 서비스</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-item service-item-left">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <img class="img-fluid rounded-circle" src="img/r2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight"
+                             data-wow-delay="0.5s"
+                             style="font-size:26px;">
+                            <h3 class="text-uppercase" style="font-size:2rem;">도와드릴 수 있습니다</h3>
+
+                            <p class="mb-4">- 국제 상거래법 자문 및 소송</p>
+                            <p class="mb-4">- 반부패 및 직무상 비위 관련 형사 사건</p>
+                            <p class="mb-4">- 중재 계약 및 대체적 분쟁 해결(ADR)</p>
+                            <p class="mb-4">- 법률 교육 및 변호사 시험 자문</p>
+                            <p class="mb-4">- 유언장 작성 및 상속 설계</p>
+                            <p class="mb-4">- 사업 계약서 작성 및 문서화</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5 style="font-size:2.5rem; letter-spacing:2px;">전문가 팀</h5>
+                        <h1>엔씨 트리 리걸 서비스</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chanthima -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img src="img/a11.jpg"
+                                 alt=""
+                                 style="width:100%; height:100%; object-fit:contain; background:#000;">
+                        </div>
+
+                        <a class="team-name" href="#"
+                           style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                            <h5 class="text-uppercase mb-1">chanthima noenchai</h5>
+                            <h5 class="text-uppercase mb-1">대표이사</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="row justify-content-center g-4">
+
+                <!-- Pinyo -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img src="img/b22.jpg"
+                                 alt=""
+                                 style="width:100%; height:100%; object-fit:contain; background:#000;">
+                        </div>
+
+                        <a class="team-name" href="#"
+                           style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                            <h5 class="text-uppercase mb-1" style="color:#ffffff;">
+                                Pinyo Nunkaew
+                            </h5>
+                            <h5 class="text-uppercase mb-1" style="color:#ffffff;">
+                                형사 사건 법률 자문
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sumet -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img src="img/c33.jpg"
+                                 alt=""
+                                 style="width:100%; height:100%; object-fit:contain; background:#000;">
+                        </div>
+
+                        <a class="team-name" href="#"
+                           style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                            <h5 class="text-uppercase mb-1" style="color:#ffffff;">
+                                Sumet Jaradol
+                            </h5>
+                            <h5 class="text-uppercase mb-1" style="color:#ffffff;">
+                                가족법 전문 변호사
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Thayida -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-body">
+                            <img src="img/d44.jpg"
+                                 alt=""
+                                 style="width:100%; height:100%; object-fit:contain; background:#000;">
+                        </div>
+
+                        <a class="team-name" href="#"
+                           style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                            <h5 class="text-uppercase mb-1" style="color:#ffffff;">
+                                Thayida Nathayu
+                            </h5>
+                            <h5 class="text-uppercase mb-1" style="color:#ffffff;">
+                                민사 사건 법률 자문
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5 style="font-size:2.5rem;">엔씨 트리</h5>
+                        <h1 style="font-size:4rem;">엔씨 트리 리걸 서비스</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="testimonial-item text-center"
+                     data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                    <p class="fs-5">
+                        당사 법률사무소는 모든 유형의 법률 사안에 대해
+                        변호사 대리 및 법률 자문 서비스를 제공합니다.<br>
+                        민사, 형사 및 노동법을 비롯하여,<br>
+                        행정법, 가족법 및 기타 법률 사안을 포함합니다.<br><br>
+
+                        후아힌에 위치한 당사 법률사무소는
+                        태국인 및 외국인 고객을 대상으로
+                        법률 자문 서비스를 제공합니다.<br>
+                        (태국어 및 영어 서비스 제공)<br><br>
+
+                        영업시간:<br>
+                        월요일 – 금요일<br>
+                        09:00 – 16:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Navbar: hide on scroll down, show on scroll up -->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("mainNavbar");
+
+        window.addEventListener("scroll", function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > 120) {
+                // scroll down -> hide
+                navbar.style.top = "-220px";
+            } else {
+                // scroll up -> show
+                navbar.style.top = "0";
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+
+</html>
