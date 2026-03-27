@@ -1925,7 +1925,7 @@ html[lang="en"] .carousel-caption .title-center h1{
         top: 50% !important;
         transform: translateY(-50%) !important;
         height: 1px !important;
-        width: 50px !important;   /* ปรับค่านี้ได้ */
+        width: 80px !important;   /* ปรับค่านี้ได้ */
         background: #fff !important;
         border: 0 !important;
     }
