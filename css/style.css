@@ -1839,4 +1839,38 @@ html[lang="en"] .carousel-caption .title-center h1{
         height: 125px !important;
     }
 }
+/* FIX เฉพาะมือถือ: ให้เส้นข้าง "ยินดีต้อนรับ" กลับมา
+   และให้พื้นด้านบนโปร่งใส โดยไม่กระทบ desktop */
+@media (max-width: 768px) {
+
+    /* ให้พื้นด้านบนโปร่งใสเฉพาะมือถือ */
+    .carousel-caption {
+        background: transparent !important;
+    }
+
+    /* เปิดเส้นซ้าย-ขวาของ h5 กลับมาเฉพาะ title ตรง header */
+    .carousel-caption .title .title-left h5::after,
+    .carousel-caption .title .title-center h5::before,
+    .carousel-caption .title .title-center h5::after,
+    .carousel-caption .title .title-right h5::before {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        width: 500% !important;
+        height: 0 !important;
+        top: 9px !important;
+        border-bottom: 1px solid var(--bs-white) !important;
+    }
+
+    .carousel-caption .title .title-left h5::after,
+    .carousel-caption .title .title-center h5::after {
+        left: calc(100% + 15px) !important;
+    }
+
+    .carousel-caption .title .title-right h5::before,
+    .carousel-caption .title .title-center h5::before {
+        right: calc(100% + 15px) !important;
+    }
+}
+
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
