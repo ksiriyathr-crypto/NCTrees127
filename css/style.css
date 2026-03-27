@@ -2019,4 +2019,14 @@ html[lang="en"] .carousel-caption .title-center h1{
         word-break: break-word !important;
     }
 }
+@media (max-width: 768px) {
+
+    .contact p,
+    .container-fluid p {
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        white-space: normal !important;
+        line-break: strict !important;
+    }
+}
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
