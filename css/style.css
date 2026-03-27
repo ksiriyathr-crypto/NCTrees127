@@ -1879,4 +1879,24 @@ html[lang="en"] .carousel-caption .title-center h1{
         -webkit-backdrop-filter: none !important;
     }
 }
+@media (max-width: 768px) {
+
+    /* ปรับเส้นด้านบน (welcome) ให้ยาวเท่าด้านล่าง */
+    .carousel-caption .title h5::before,
+    .carousel-caption .title h5::after {
+        width: 120% !important;   /* ปรับตรงนี้ให้บาลานซ์กับเส้นล่าง */
+        max-width: 200px;         /* กันยาวเกินหน้าจอ */
+    }
+
+    /* จัดตำแหน่งซ้าย-ขวาให้เท่ากัน */
+    .carousel-caption .title h5::before {
+        right: 100% !important;
+        margin-right: 15px;
+    }
+
+    .carousel-caption .title h5::after {
+        left: 100% !important;
+        margin-left: 15px;
+    }
+}
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
