@@ -1925,7 +1925,7 @@ html[lang="en"] .carousel-caption .title-center h1{
         top: 50% !important;
         transform: translateY(-50%) !important;
         height: 1px !important;
-        width: 120px !important;   /* ปรับค่านี้ได้ */
+        width: 100px !important;   /* ปรับค่านี้ได้ */
         background: #fff !important;
         border: 0 !important;
     }
@@ -2027,6 +2027,26 @@ html[lang="en"] .carousel-caption .title-center h1{
         overflow-wrap: normal !important;
         white-space: normal !important;
         line-break: strict !important;
+    }
+}
+@media (max-width: 768px) {
+    .no-break {
+        white-space: nowrap !important;
+        display: inline-block !important;
+    }
+}
+@media (max-width: 768px) {
+    .contact p,
+    .contact-page p,
+    .container-fluid p {
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        word-wrap: normal !important;
+    }
+
+    .no-break {
+        white-space: nowrap !important;
+        display: inline-block !important;
     }
 }
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
