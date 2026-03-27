@@ -1872,5 +1872,11 @@ html[lang="en"] .carousel-caption .title-center h1{
         right: calc(100% + 15px) !important;
     }
 }
-
+@media (max-width: 768px) {
+    .navbar {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+}
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
