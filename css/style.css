@@ -1899,4 +1899,45 @@ html[lang="en"] .carousel-caption .title-center h1{
         margin-left: 15px;
     }
 }
+@media (max-width: 768px) {
+
+    /* ให้ block title กึ่งกลาง */
+    .carousel-caption .title .title-center {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* ให้ h5 เป็นจุดอ้างอิงของเส้น */
+    .carousel-caption .title .title-center h5 {
+        position: relative !important;
+        display: inline-block !important;
+        padding: 0 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* บังคับเส้นซ้าย-ขวาบนมือถือ */
+    .carousel-caption .title .title-center h5::before,
+    .carousel-caption .title .title-center h5::after {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        height: 1px !important;
+        width: 110px !important;   /* ปรับค่านี้ได้ */
+        background: #fff !important;
+        border: 0 !important;
+    }
+
+    .carousel-caption .title .title-center h5::before {
+        right: 100% !important;
+        margin-right: 18px !important;
+    }
+
+    .carousel-caption .title .title-center h5::after {
+        left: 100% !important;
+        margin-left: 18px !important;
+    }
+}
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
