@@ -1925,7 +1925,7 @@ html[lang="en"] .carousel-caption .title-center h1{
         top: 50% !important;
         transform: translateY(-50%) !important;
         height: 1px !important;
-        width: 100px !important;   /* ปรับค่านี้ได้ */
+        width: 150px !important;   /* ปรับค่านี้ได้ */
         background: #fff !important;
         border: 0 !important;
     }
@@ -1938,6 +1938,85 @@ html[lang="en"] .carousel-caption .title-center h1{
     .carousel-caption .title .title-center h5::after {
         left: 100% !important;
         margin-left: 18px !important;
+    }
+}
+/* แก้หน้า Contact เฉพาะมือถือ */
+@media (max-width: 768px) {
+
+    /* หัวข้อใหญ่ */
+    .contact-page h1,
+    .contact h1,
+    .container-fluid h1 {
+        font-size: 2.6rem !important;
+        line-height: 1.2 !important;
+        letter-spacing: 0 !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* หัวข้อรอง เช่น Contact / 연락처 / ข้อมูลติดต่อ */
+    .contact-page h2,
+    .contact-page h3,
+    .contact h2,
+    .contact h3 {
+        font-size: 1.2rem !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+        margin-bottom: 18px !important;
+        letter-spacing: 0 !important;
+        word-break: keep-all !important;
+    }
+
+    /* ข้อความที่อยู่ */
+    .contact-page p,
+    .contact p,
+    .contact-page .address,
+    .contact .address {
+        font-size: 1rem !important;
+        line-height: 1.7 !important;
+        text-align: center !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+        margin-bottom: 14px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* กล่องข้อมูลติดต่อ */
+    .contact-page .bg-dark,
+    .contact .bg-dark,
+    .contact-page .p-5,
+    .contact .p-5 {
+        padding: 24px 18px !important;
+    }
+
+    /* ป้ายหัวข้อในกล่อง เช่น โทร / 이메일 / 전화번호 */
+    .contact-page label,
+    .contact-page h4,
+    .contact-page h5,
+    .contact h4,
+    .contact h5 {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+        letter-spacing: 0 !important;
+        word-break: keep-all !important;
+    }
+
+    /* ช่องข้อมูลเบอร์/อีเมล */
+    .contact-page .form-control,
+    .contact-page .form-control-plaintext,
+    .contact-page input,
+    .contact-page .rounded-pill,
+    .contact .form-control,
+    .contact .form-control-plaintext,
+    .contact input,
+    .contact .rounded-pill {
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+        padding: 16px 20px !important;
+        word-break: break-word !important;
     }
 }
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
