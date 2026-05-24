@@ -640,8 +640,9 @@ FIX MOBILE MENU OVER TEXT
 @media (max-width: 991.98px){
 
 /* เมนู dropdown มือถือ */
-.navbar-collapse{
-    background: rgba(0,0,0,0.95);
+.navbar{
+    background: transparent !important;
+}
     backdrop-filter: blur(10px);
     padding:20px;
     border-radius:15px;
@@ -1839,214 +1840,49 @@ html[lang="en"] .carousel-caption .title-center h1{
         height: 125px !important;
     }
 }
-/* FIX เฉพาะมือถือ: ให้เส้นข้าง "ยินดีต้อนรับ" กลับมา
-   และให้พื้นด้านบนโปร่งใส โดยไม่กระทบ desktop */
+/* ===== FINAL MOBILE FIX (PUT THIS AT THE VERY END) ===== */
+
 @media (max-width: 768px) {
 
-    /* ให้พื้นด้านบนโปร่งใสเฉพาะมือถือ */
-    .carousel-caption {
-        background: transparent !important;
-    }
-
-    /* เปิดเส้นซ้าย-ขวาของ h5 กลับมาเฉพาะ title ตรง header */
-    .carousel-caption .title .title-left h5::after,
-    .carousel-caption .title .title-center h5::before,
-    .carousel-caption .title .title-center h5::after,
-    .carousel-caption .title .title-right h5::before {
-        content: "" !important;
-        display: block !important;
-        position: absolute !important;
-        width: 500% !important;
-        height: 0 !important;
-        top: 9px !important;
-        border-bottom: 1px solid var(--bs-white) !important;
-    }
-
-    .carousel-caption .title .title-left h5::after,
-    .carousel-caption .title .title-center h5::after {
-        left: calc(100% + 15px) !important;
-    }
-
-    .carousel-caption .title .title-right h5::before,
-    .carousel-caption .title .title-center h5::before {
-        right: calc(100% + 15px) !important;
-    }
-}
-@media (max-width: 768px) {
     .navbar {
         background: transparent !important;
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-    }
-}
-@media (max-width: 768px) {
-
-    /* ปรับเส้นด้านบน (welcome) ให้ยาวเท่าด้านล่าง */
-    .carousel-caption .title h5::before,
-    .carousel-caption .title h5::after {
-        width: 120% !important;   /* ปรับตรงนี้ให้บาลานซ์กับเส้นล่าง */
-        max-width: 200px;         /* กันยาวเกินหน้าจอ */
+        min-height: 72px !important;
     }
 
-    /* จัดตำแหน่งซ้าย-ขวาให้เท่ากัน */
-    .carousel-caption .title h5::before {
-        right: 100% !important;
-        margin-right: 15px;
+    .navbar .navbar-brand img {
+        height: 50px !important;
     }
 
-    .carousel-caption .title h5::after {
-        left: 100% !important;
-        margin-left: 15px;
-    }
-}
-@media (max-width: 768px) {
-
-    /* ให้ block title กึ่งกลาง */
-    .carousel-caption .title .title-center {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+    .carousel-caption {
+        padding-top: 190px !important;
     }
 
-    /* ให้ h5 เป็นจุดอ้างอิงของเส้น */
-    .carousel-caption .title .title-center h5 {
-        position: relative !important;
-        display: inline-block !important;
-        padding: 0 18px !important;
-        margin-bottom: 12px !important;
+    .carousel-caption .title {
+        margin-top: 25px !important;
     }
 
-    /* บังคับเส้นซ้าย-ขวาบนมือถือ */
-    .carousel-caption .title .title-center h5::before,
-    .carousel-caption .title .title-center h5::after {
-        content: "" !important;
-        display: block !important;
-        position: absolute !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        height: 1px !important;
-        width: 80px !important;   /* ปรับค่านี้ได้ */
-        background: #fff !important;
-        border: 0 !important;
+    .carousel-caption h5 {
+        margin-top: 20px !important;
+        font-size: 22px !important;
     }
 
-    .carousel-caption .title .title-center h5::before {
-        right: 100% !important;
-        margin-right: 18px !important;
-    }
-
-    .carousel-caption .title .title-center h5::after {
-        left: 100% !important;
-        margin-left: 18px !important;
-    }
-}
-/* แก้หน้า Contact เฉพาะมือถือ */
-@media (max-width: 768px) {
-
-    /* หัวข้อใหญ่ */
-    .contact-page h1,
-    .contact h1,
-    .container-fluid h1 {
-        font-size: 2.6rem !important;
+    .carousel-caption h1,
+    .carousel-caption .display-1 {
+        margin-top: 10px !important;
+        font-size: 2.1rem !important;
         line-height: 1.2 !important;
-        letter-spacing: 0 !important;
-        word-break: keep-all !important;
-        overflow-wrap: break-word !important;
-        text-align: center !important;
-        margin-bottom: 20px !important;
-    }
-
-    /* หัวข้อรอง เช่น Contact / 연락처 / ข้อมูลติดต่อ */
-    .contact-page h2,
-    .contact-page h3,
-    .contact h2,
-    .contact h3 {
-        font-size: 1.2rem !important;
-        line-height: 1.4 !important;
-        text-align: center !important;
-        margin-bottom: 18px !important;
-        letter-spacing: 0 !important;
-        word-break: keep-all !important;
-    }
-
-    /* ข้อความที่อยู่ */
-    .contact-page p,
-    .contact p,
-    .contact-page .address,
-    .contact .address {
-        font-size: 1rem !important;
-        line-height: 1.7 !important;
-        text-align: center !important;
-        word-break: keep-all !important;
-        overflow-wrap: break-word !important;
-        margin-bottom: 14px !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-
-    /* กล่องข้อมูลติดต่อ */
-    .contact-page .bg-dark,
-    .contact .bg-dark,
-    .contact-page .p-5,
-    .contact .p-5 {
-        padding: 24px 18px !important;
-    }
-
-    /* ป้ายหัวข้อในกล่อง เช่น โทร / 이메일 / 전화번호 */
-    .contact-page label,
-    .contact-page h4,
-    .contact-page h5,
-    .contact h4,
-    .contact h5 {
-        font-size: 1rem !important;
-        line-height: 1.4 !important;
-        letter-spacing: 0 !important;
-        word-break: keep-all !important;
-    }
-
-    /* ช่องข้อมูลเบอร์/อีเมล */
-    .contact-page .form-control,
-    .contact-page .form-control-plaintext,
-    .contact-page input,
-    .contact-page .rounded-pill,
-    .contact .form-control,
-    .contact .form-control-plaintext,
-    .contact input,
-    .contact .rounded-pill {
-        font-size: 0.95rem !important;
-        line-height: 1.4 !important;
-        padding: 16px 20px !important;
-        word-break: break-word !important;
     }
 }
-@media (max-width: 768px) {
 
-    .contact p,
-    .container-fluid p {
-        word-break: keep-all !important;
-        overflow-wrap: normal !important;
-        white-space: normal !important;
-        line-break: strict !important;
-    }
-}
-@media (max-width: 768px) {
-    .no-break {
-        white-space: nowrap !important;
-        display: inline-block !important;
-    }
-}
-@media (max-width: 768px) {
-    .contact p,
-    .contact-page p,
-    .container-fluid p {
-        word-break: keep-all !important;
-        overflow-wrap: normal !important;
-        word-wrap: normal !important;
+@media (max-width: 576px) {
+
+    .carousel-caption {
+        padding-top: 210px !important;
     }
 
-    .no-break {
-        white-space: nowrap !important;
-        display: inline-block !important;
+    .carousel-caption .title {
+        margin-top: 30px !important;
     }
+
 }
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */

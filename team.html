@@ -1,512 +1,533 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="utf-8">
-    <title>NC Trees Legal Services | ทนายหัวหิน ที่ปรึกษากฎหมาย</title>
+    <title>NC Trees Legal Services | ทนายความหัวหิน สำนักงานกฎหมาย รับรองเอกสาร</title>
+    
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ทนายหัวหิน, lawyer hua hin, สำนักงานกฎหมายหัวหิน, legal services thailand, ทนายความประเทศไทย" name="keywords">
-    <meta content="สำนักงานกฎหมายหัวหิน NC Trees Legal Services ให้บริการว่าความ คดีแพ่ง อาญา ครอบครัว และธุรกิจ ให้คำปรึกษากฎหมายทั่วประเทศไทย" name="description">
+    
+    <meta content="ทนายความหัวหิน, ทนายหัวหิน, สำนักงานกฎหมายหัวหิน, ปรึกษากฎหมาย หัวหิน, lawyer hua hin, รับรองเอกสาร หัวหิน, ทนายความประจวบคีรีขันธ์, Notary Public หัวหิน" name="keywords">
+    
+    <meta content="มองหาทนายความหัวหิน? NC Trees Legal Services สำนักงานกฎหมายหัวหิน ให้บริการว่าความ คดีแพ่ง อาญา ครอบครัว ธุรกิจ และ Notary Public ให้คำปรึกษากฎหมายทั่วประเทศไทย" name="description">
 
-      <!-- Open Graph (แชร์แล้วสวย) -->
-    <meta property="og:title" content="NC Trees Legal Services">
-    <meta property="og:description" content="สำนักงานกฎหมายหัวหิน ให้บริการด้านกฎหมายครบวงจร">
+    <meta property="og:title" content="NC Trees Legal Services | ทนายความหัวหิน สำนักงานกฎหมาย">
+    <meta property="og:description" content="สำนักงานกฎหมายหัวหิน ให้บริการด้านกฎหมายและคดีความครบวงจรทั่วประเทศไทย">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nctrees.netlify.app/">
     <meta property="og:image" content="https://nctrees.netlify.app/img/ll1.jpg">
+    <meta property="og:site_name" content="NC Trees Legal Services">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "NC Trees Legal Services",
+      "alternateName": "สำนักงานทนายความหัวหิน NC Trees",
+      "image": "https://nctrees.netlify.app/img/ll1.jpg",
+      "@id": "https://nctrees.netlify.app/",
+      "url": "https://nctrees.netlify.app/",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "หัวหิน",
+        "addressRegion": "ประจวบคีรีขันธ์",
+        "addressCountry": "TH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "name": "Hua Hin, Prachuap Khiri Khan"
+      },
+      "description": "สำนักงานกฎหมาย ทนายความหัวหิน ให้บริการว่าความ คดีแพ่ง อาญา ครอบครัว และธุรกิจ",
+      "priceRange": "$$"
+    }
+    </script>
 
-    <!-- Google Web Fonts -->
+    <link href="img/ll1.jpg" rel="icon" type="image/jpeg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-gold: #C9A24D;
+            --dark-bg: #111111;
+        }
+        
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .text-gold {
+            color: var(--primary-gold) !important;
+        }
+
+        .bg-gold {
+            background-color: var(--primary-gold) !important;
+        }
+
+        /* Navbar Enhancements */
+        .navbar-custom {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            transition: all 0.4s ease;
+            backdrop-filter: blur(5px);
+        }
+        .navbar-custom.scrolled {
+            background: rgba(17, 17, 17, 0.95);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .nav-link {
+            color: var(--primary-gold) !important;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important;
+            text-shadow: 0 0 10px rgba(201, 162, 77, 0.5);
+        }
+        
+        .navbar-brand img {
+            height: 100px;
+            transition: height 0.3s ease;
+        }
+        @media (max-width: 991px) {
+            .navbar-brand img { height: 70px; }
+            .navbar-custom { background: rgba(17, 17, 17, 0.95); }
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('img/ll4.png') center center/cover no-repeat;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero-title h5 {
+            color: var(--primary-gold);
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .hero-title h1 {
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        /* Service Section */
+        .service-img img {
+            border: 5px solid var(--primary-gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease;
+        }
+        .service-item:hover .service-img img {
+            transform: scale(1.05);
+        }
+        .service-list li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        .service-list li i {
+            margin-top: 5px;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Team Section */
+        .team-item {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .team-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .team-body {
+            height: 300px;
+            background: #000;
+            overflow: hidden;
+        }
+        .team-body img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .team-item:hover .team-body img {
+            transform: scale(1.1);
+        }
+        .team-name {
+            display: block;
+            padding: 20px;
+            background: var(--dark-bg);
+            text-decoration: none;
+            border-bottom: 4px solid var(--primary-gold);
+        }
+        .team-name h5 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+        .team-name .designation {
+            color: var(--primary-gold);
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        /* Testimonial / Info */
+        .info-section {
+            background: linear-gradient(rgba(17,17,17,0.9), rgba(17,17,17,0.9)), url('img/testimonial-1.jpg') center center/cover fixed;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" style="z-index: 9999;">
+        <div class="spinner-grow text-gold" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
-
-
-   <!-- Header Start -->
-<div class="container-fluid p-0">
-
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark px-lg-5"
-       style="position:fixed; top:0; left:0; right:0; z-index:999;
-              background:transparent;
-              border:none;
-              transition: top 0.4s ease;">
-
-    <!-- LOGO -->
-    <a href="index.html" class="navbar-brand d-flex align-items-center me-5">
-      <img src="img/ll1.jpg" alt="NCTREES Logo" style="height:150px;">
-    </a>
-
-    <!-- TOGGLER -->
-    <button type="button" class="navbar-toggler me-4"
-            data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- MENU -->
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto p-4 p-lg-0">
-
-        <a href="index.html"
-           class="nav-item nav-link active"
-           style="color:#C9A24D; font-size:1.4rem; font-weight:1000;">
-          Home
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 navbar-custom fixed-top">
+        <a href="index.html" class="navbar-brand d-flex align-items-center me-5">
+            <img src="img/ll1.jpg" alt="ทนายความหัวหิน สำนักงานกฎหมาย NCTREES Logo" class="rounded shadow-sm">
         </a>
 
-        <a href="contact_th.html"
-           class="nav-item nav-link"
-           style="color:#C9A24D; font-size:1.4rem; font-weight:1000;">
-          Contact
-        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <!-- Change language -->
-        <div class="nav-item dropdown">
-          <a href="#"
-             class="nav-link dropdown-toggle"
-             data-bs-toggle="dropdown"
-             style="color:#C9A24D; font-size:1.4rem; font-weight:1000;">
-            Change language
-          </a>
-
-          <div class="dropdown-menu m-0" style="background-color:#111;">
-            <a href="team.html"
-               class="dropdown-item"
-               style="color:#C9A24D; font-size:1.15rem; font-weight:1000;">
-              TH
-            </a>
-            <a href="index.html"
-               class="dropdown-item"
-               style="color:#C9A24D; font-size:1.15rem; font-weight:1000;">
-              EN
-            </a>
-            <a href="test.html"
-               class="dropdown-item"
-               style="color:#C9A24D; font-size:1.15rem; font-weight:1000;">
-              KOR
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </nav>
-
-  <!-- กัน navbar fixed บังหัวภาพ/ข้อความ -->
- 
-
-  <!-- Hero Wrapper -->
-  <div style="position:relative; width:100%; min-height:100vh;">
-
-    <!-- Background Image -->
-    <img class="w-100" src="img/ll4.png" alt="Image"
-         style="min-height:100vh; object-fit:cover; display:block;">
-
-    <!-- Black Overlay -->
-    <div style="
-        position:absolute;
-        inset:0;
-        background:rgba(0,0,0,0.45);
-        z-index:1;">
-    </div>
-
-    <!-- Caption -->
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-         style="z-index:2;">
-
-      <div class="title mx-5 px-5 animated slideInDown" style="margin-top:38px;">
-        <div class="title-center text-center">
-          <h5 style="font-size:3rem;">ยินดีต้อนรับ</h5>
-          <h1 class="display-1">เอ็นซี ทรี ลีเกิล เซอร์วิส</h1>
-        </div>
-      </div>
-
-      <p class="fs-5 mb-5 animated slideInDown text-center"
-   style="max-width:900px;
-          margin:0 auto;
-          line-height:1.95;
-          transform: translateY(-30px);">
-        เราให้บริการด้านกฎหมายทั่วราชอาณาจักรไทย
-        ครอบคลุมการดำเนินคดี การว่าความ และการเป็นผู้แทนทางกฎหมายในข้อพิพาททุกประเภท
-        รวมถึงการยื่นฟ้อง การยื่นคำให้การ<br>
-        และการให้บริการทางกฎหมายอย่างครบวงจร<br><br>
-
-        ขอบเขตงานให้บริการของสำนักงาน ครอบคลุมคดีแพ่งและคดีอาญา
-        กฎหมายครอบครัว กฎหมายแรงงาน และการหย่าร้าง
-        การจัดการมรดกและการดำเนินการด้านมรดก
-        การทวงถามหนี้ คดีเช็ค
-        คดีที่ดินและอสังหาริมทรัพย์
-        การจดทะเบียนบริษัทและการร่างสัญญา
-        การอนุญาโตตุลาการ
-        และการระงับข้อพิพาททางเลือก<br><br>
-
-        นอกจากนี้ สำนักงานยังให้บริการให้คำปรึกษาทางกฎหมาย
-        บริการแปลเอกสารทางกฎหมาย
-        และบริการรับรองเอกสารโดยทนายความ
-        (Notarial Services Attorney)
-      </p>
-
-    </div>
-  </div>
-</div>
-<!-- Header End -->
-
-
-
-
-
-    <!-- Service Start -->
-<div class="container-fluid py-5">
-    <div class="container py-5">
-        <div class="text-center">
-            <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                <div class="title-center">
-                    <h5 style="font-size:2.5rem;">บริการ</h5>
-                    <h1 style="font-size:4rem;">เราช่วยคุณอย่างไร</h1>
-                </div>
-            </div>
-        </div>
-
-        <!-- Service 1 -->
-        <div class="service-item service-item-left">
-            <div class="row g-0 align-items-center">
-                <div class="col-md-5">
-                    <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
-                        <img class="img-fluid rounded-circle" src="img/r2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight"
-                         data-wow-delay="0.5s"
-                         style="font-size:26px;">
-                        <h3 class="text-uppercase" style="font-size:2rem;">เราสามารถช่วยคุณได้</h3>
-
-                        <p class="mb-4">- บริการตรวจสอบเอกสาร</p>
-                        <p class="mb-4">- บริการรับรองเอกสารและการตรวจสอบลายเซ็น</p>
-                        <p class="mb-4">- การรับรองเอกสารโดยสถานทูต; ติดต่อสถานทูต</p>
-                        <p class="mb-4">- คำรับรองต่อหน้าพนักงานรับรองเอกสาร, หนังสือรับรองต่อหน้าพนักงานรับรองเอกสาร</p>
-                        <p class="mb-4">- รับรองสำเนาถูกต้องโดย Notary Public: หนังสือเดินทาง, บัตรประชาชน, ใบแจ้งยอดบัญชีธนาคาร</p>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="contact_th.html" class="nav-item nav-link">Contact</a>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Change language</a>
+                    <div class="dropdown-menu border-0 rounded-0 m-0 shadow" style="background-color: rgba(17, 17, 17, 0.95);">
+                        <a href="team.html" class="dropdown-item text-gold fw-bold">TH</a>
+                        <a href="index.html" class="dropdown-item text-gold fw-bold">EN</a>
+                        <a href="test.html" class="dropdown-item text-gold fw-bold">KOR</a>
                     </div>
                 </div>
             </div>
         </div>
+    </nav>
 
-        <!-- Service 2 -->
-        <div class="service-item service-item-right">
-    <div class="row g-0 align-items-center">
-        <div class="col-md-5 order-md-1 text-md-end">
-            <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
-                <img class="img-fluid rounded-circle" src="img/r3.png" alt="">
+    <div class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-title animated slideInDown mb-4">
+                <h5 class="mb-3">ยินดีต้อนรับ</h5>
+                <h1 class="display-2 text-white">
+                    เอ็นซี ทรี ลีเกิล เซอร์วิส<br>
+                    <span style="font-size: 2rem; font-weight: 300; display: block; margin-top: 15px; color: #f8f9fa;">ทนายความหัวหิน - สำนักงานกฎหมาย</span>
+                </h1>
             </div>
-        </div>
-        <div class="col-md-7">
-            <div class="service-text px-5 px-md-0 py-md-5 text-md-start wow fadeInLeft"
-                 data-wow-delay="0.5s"
-                 style="font-size:26px;">
-                 
-                <h3 class="text-uppercase" style="font-size:2rem;">เราสามารถช่วยคุณได้</h3>
-
-                <p class="mb-4">- ลายเซ็นรับรองโนตารี</p>
-                <p class="mb-4">- บริการรับรองเอกสารสำหรับผู้ที่ทำงานหรือศึกษาต่อต่างประเทศ</p>
-                <p class="mb-4">- บริการรับรองเอกสารสำหรับการดำเนินธุรกิจในต่างประเทศ</p>
-                <p class="mb-4">- บริการรับรองเอกสารสำหรับการจดทะเบียนบริษัทหรือการเปิดบัญชีธนาคารในต่างประเทศ</p>
-                <p class="mb-4">- การรับรองข้อเท็จจริงหรือเรื่องทางกฎหมาย</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="fs-5 animated slideInUp fw-light" style="line-height: 1.8;">
+                        เราให้บริการด้านกฎหมายทั่วราชอาณาจักรไทย ครอบคลุมการดำเนินคดี การว่าความ และการเป็นผู้แทนทางกฎหมายในข้อพิพาททุกประเภท รวมถึงการยื่นฟ้อง การยื่นคำให้การ<br>และการให้บริการทางกฎหมายอย่างครบวงจร
+                        <br><br>
+                        ขอบเขตงานให้บริการของสำนักงาน ครอบคลุมคดีแพ่งและคดีอาญา กฎหมายครอบครัว กฎหมายแรงงาน และการหย่าร้าง การจัดการมรดกและการดำเนินการด้านมรดก การทวงถามหนี้ คดีเช็ค คดีที่ดินและอสังหาริมทรัพย์ การจดทะเบียนบริษัทและการร่างสัญญา การอนุญาโตตุลาการ และการระงับข้อพิพาททางเลือก
+                        <br><br>
+                        นอกจากนี้ สำนักงานยังให้บริการให้คำปรึกษาทางกฎหมาย บริการแปลเอกสารทางกฎหมาย และบริการรับรองเอกสารโดยทนายความ (Notarial Services Attorney)
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-        <!-- Service 3 -->
-        <div class="service-item service-item-left">
-            <div class="row g-0 align-items-center">
-                <div class="col-md-5">
-                    <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
-                        <img class="img-fluid rounded-circle" src="img/ss1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight"
-                         data-wow-delay="0.5s"
-                         style="font-size:26px;">
-                        <h3 class="text-uppercase" style="font-size:2rem;">เราสามารถช่วยคุณได้</h3>
-                        <p class="mb-4">- การดำเนินคดีแพ่งและอาญา</p>
-                        <p class="mb-4">- ความผิดทางอาญา (ฉ้อโกง, ลักทรัพย์, ปล้นทรัพย์, คดีเกี่ยวกับตลาดแลกเปลี่ยนเงินตราต่างประเทศ)</p>
-                        <p class="mb-4">- บริการรับรองเอกสารสำหรับการดำเนินธุรกิจในต่างประเทศ</p>
-                        <p class="mb-4">- กฎหมายปกครอง</p>
-                        <p class="mb-4">- การหย่าร้างและข้อพิพาทในครอบครัว</p>
-                        <p class="mb-4">- ข้อพิพาทระหว่างหุ้นส่วนและบริษัท</p>
-                        <p class="mb-4">- กฎหมายแรงงานและการจ้างงาน</p>
-                    </div>
-                </div>
+    <div class="container-fluid py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-gold fw-bold text-uppercase tracking-wider">บริการของเรา</h5>
+                <h2 class="display-4 fw-bold text-dark">เราช่วยคุณอย่างไร</h2>
             </div>
-        </div>
 
-        <!-- Service 4 -->
-       <div class="service-item service-item-right">
-    <div class="row g-0 align-items-center">
-        <div class="col-md-5 order-md-1 text-md-end">
-            <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
-                <img class="img-fluid rounded-circle" src="img/l44.png" alt="">
-            </div>
-        </div>
-        <div class="col-md-7">
-            <div class="service-text px-5 px-md-0 py-md-5 text-md-start wow fadeInLeft"
-                 data-wow-delay="0.5s"
-                 style="font-size:26px;">
-                 
-                <h3 class="text-uppercase" style="font-size:2rem;">เราสามารถช่วยคุณได้</h3>
-
-                <p class="mb-4">- การจดทะเบียนบริษัทและการจัดโครงสร้างองค์กร</p>
-                <p class="mb-4">- ข้อพิพาทระหว่างผู้ถือหุ้น กรรมการ และหุ้นส่วน</p>
-                <p class="mb-4">- สัญญาทางการค้าและข้อตกลงทางธุรกิจ</p>
-                <p class="mb-4">- การให้คำปรึกษาด้านภาษีและการระงับข้อพิพาททางภาษี</p>
-                <p class="mb-4">- การปฏิบัติตามกฎระเบียบทางธุรกิจและเรื่องที่เกี่ยวข้อง</p>
-                <p class="mb-4">- การให้คำปรึกษาทางกฎหมายทั่วประเทศ</p>
-            </div>
-        </div>
-    </div>
-</div>
-        <!-- Service 5 -->
-        <div class="service-item service-item-left">
-            <div class="row g-0 align-items-center">
-                <div class="col-md-5">
-                    <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
-                        <img class="img-fluid rounded-circle" src="img/r2.png" alt="">
+            <div class="service-item mb-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="service-img text-center p-3">
+                            <img class="img-fluid rounded-circle w-75" src="img/r2.png" alt="บริการรับรองเอกสาร ทนายความหัวหิน">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight"
-                         data-wow-delay="0.5s"
-                         style="font-size:26px;">
-                        <h3 class="text-uppercase" style="font-size:2rem;">เราสามารถช่วยคุณได้</h3>
-
-                        <p class="mb-4">- การให้คำปรึกษาและการดำเนินคดีเกี่ยวกับกฎหมายการค้าระหว่างประเทศ</p>
-                        <p class="mb-4">- คดีอาญาเกี่ยวกับการทุจริตและการประพฤติมิชอบ</p>
-                        <p class="mb-4">- ข้อตกลงอนุญาโตตุลาการและการระงับข้อพิพาททางเลือก (ADR)</p>
-                        <p class="mb-4">- การให้คำปรึกษาด้านการศึกษาทางกฎหมายและการสอบเนติบัณฑิต</p>
-                        <p class="mb-4">- การร่างพินัยกรรมและการวางแผนมรดก</p>
-                        <p class="mb-4">- การร่างและจัดทำเอกสารสัญญาทางธุรกิจ</p>
+                    <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.3s">
+                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-secondary">
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> บริการตรวจสอบเอกสาร</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารและการตรวจสอบลายเซ็น</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การรับรองเอกสารโดยสถานทูต; ติดต่อสถานทูต</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> คำรับรองต่อหน้าพนักงานรับรองเอกสาร, หนังสือรับรองต่อหน้าพนักงานรับรองเอกสาร</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> รับรองสำเนาถูกต้องโดย Notary Public: หนังสือเดินทาง, บัตรประชาชน, ใบแจ้งยอดบัญชีธนาคาร</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-</div>
-<!-- Service End -->
+            <hr class="my-5 opacity-25">
 
-    
-
-
- <!-- Team Start -->
-<div class="container-fluid py-5">
-    <div class="container py-5">
-        <div class="text-center">
-            <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                <div class="title-center">
-                    <h5 style="font-size:2.5rem; letter-spacing:2px;">ทีม</h5>
-                    <h1>เอ็นซี ทรี ลีเกิล เซอร์วิส</h1>
-                </div>
-            </div>
-        </div>
-
-        <!-- พี่อ้อม -->
-        <div class="row justify-content-center mb-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item">
-                    <div class="team-body">
-                        <img class="img-fluid"
-                             src="img/a11.jpg"
-                             alt=""
-                             style="width:100%; height:100%; object-fit:contain; background:#000;">
+            <div class="service-item mb-5">
+                <div class="row g-5 align-items-center flex-row-reverse">
+                    <div class="col-md-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="service-img text-center p-3">
+                            <img class="img-fluid rounded-circle w-75" src="img/r3.png" alt="Notary Public บริการทนายความหัวหิน">
+                        </div>
                     </div>
+                    <div class="col-md-7 wow fadeInRight" data-wow-delay="0.3s">
+                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-secondary">
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> ลายเซ็นรับรองโนตารี</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารสำหรับผู้ที่ทำงานหรือศึกษาต่อต่างประเทศ</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารสำหรับการดำเนินธุรกิจในต่างประเทศ</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารสำหรับการจดทะเบียนบริษัทหรือการเปิดบัญชีธนาคารในต่างประเทศ</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การรับรองข้อเท็จจริงหรือเรื่องทางกฎหมาย</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                    <a class="team-name" href="#"
-                       style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-                        <h5 class="text-uppercase mb-1">นางสาวจันทิมา เนินชัย</h5>
-                        <h5 class="text-uppercase mb-1">กรรมการ ผู้จัดการ</h5>
-                    </a>
+            <hr class="my-5 opacity-25">
+
+            <div class="service-item mb-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="service-img text-center p-3">
+                            <img class="img-fluid rounded-circle w-75" src="img/ss1.jpg" alt="ว่าความคดีแพ่งและอาญา สำนักงานกฎหมายหัวหิน">
+                        </div>
+                    </div>
+                    <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.3s">
+                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-secondary">
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การดำเนินคดีแพ่งและอาญา</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> ความผิดทางอาญา (ฉ้อโกง, ลักทรัพย์, ปล้นทรัพย์, คดีเกี่ยวกับตลาดแลกเปลี่ยนเงินตราต่างประเทศ)</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารสำหรับการดำเนินธุรกิจในต่างประเทศ</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> กฎหมายปกครอง</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การหย่าร้างและข้อพิพาทในครอบครัว</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> ข้อพิพาทระหว่างหุ้นส่วนและบริษัท</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> กฎหมายแรงงานและการจ้างงาน</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 opacity-25">
+
+            <div class="service-item mb-5">
+                <div class="row g-5 align-items-center flex-row-reverse">
+                    <div class="col-md-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="service-img text-center p-3">
+                            <img class="img-fluid rounded-circle w-75" src="img/l44.png" alt="ที่ปรึกษากฎหมายธุรกิจ จดทะเบียนบริษัท หัวหิน">
+                        </div>
+                    </div>
+                    <div class="col-md-7 wow fadeInRight" data-wow-delay="0.3s">
+                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-secondary">
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การจดทะเบียนบริษัทและการจัดโครงสร้างองค์กร</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> ข้อพิพาทระหว่างผู้ถือหุ้น กรรมการ และหุ้นส่วน</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> สัญญาทางการค้าและข้อตกลงทางธุรกิจ</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การให้คำปรึกษาด้านภาษีและการระงับข้อพิพาททางภาษี</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การปฏิบัติตามกฎระเบียบทางธุรกิจและเรื่องที่เกี่ยวข้อง</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การให้คำปรึกษาทางกฎหมายทั่วประเทศ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 opacity-25">
+
+            <div class="service-item">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="service-img text-center p-3">
+                            <img class="img-fluid rounded-circle w-75" src="img/r2.png" alt="ร่างสัญญาทางธุรกิจ ทนายความหัวหิน">
+                        </div>
+                    </div>
+                    <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.3s">
+                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-secondary">
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การให้คำปรึกษาและการดำเนินคดีเกี่ยวกับกฎหมายการค้าระหว่างประเทศ</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> คดีอาญาเกี่ยวกับการทุจริตและการประพฤติมิชอบ</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> ข้อตกลงอนุญาโตตุลาการและการระงับข้อพิพาททางเลือก (ADR)</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การให้คำปรึกษาด้านการศึกษาทางกฎหมายและการสอบเนติบัณฑิต</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การร่างพินัยกรรมและการวางแผนมรดก</li>
+                            <li><i class="bi bi-check-circle-fill text-gold"></i> การร่างและจัดทำเอกสารสัญญาทางธุรกิจ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-gold fw-bold text-uppercase tracking-wider">ทีมงานของเรา</h5>
+                <h2 class="display-4 fw-bold text-dark">ทนายความและที่ปรึกษา</h2>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item text-center">
+                        <div class="team-body">
+                            <img src="img/a11.jpg" alt="นางสาวจันทิมา เนินชัย - กรรมการผู้จัดการ ทนายความหัวหิน">
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase">นางสาวจันทิมา เนินชัย</h5>
+                            <div class="designation text-uppercase">กรรมการ ผู้จัดการ</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item text-center">
+                        <div class="team-body">
+                            <img src="img/b22.jpg" alt="นายภิญโญ นุ่นแก้ว - ทนายที่ปรึกษาคดีอาญา หัวหิน">
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase">นายภิญโญ นุ่นแก้ว</h5>
+                            <div class="designation text-uppercase">ทนายที่ปรึกษา คดีอาญา</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="team-item text-center">
+                        <div class="team-body">
+                            <img src="img/c33.jpg" alt="นายสุเมธ จรดล - ทนายคดีครอบครัว หัวหิน">
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase">นายสุเมธ จรดล</h5>
+                            <div class="designation text-uppercase">ทนายคดี ครอบครัว</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item text-center">
+                        <div class="team-body">
+                            <img src="img/d444.jpg" alt="นายวิชพนธ์ อรุณแจ้ง - ทนายที่ปรึกษาคดีแพ่ง หัวหิน">
+                        </div>
+                        <a class="team-name" href="#">
+                            <h5 class="text-uppercase">นายวิชพนธ์ อรุณแจ้ง</h5>
+                            <div class="designation text-uppercase">ทนายที่ปรึกษา คดีแพ่ง</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- คนล่าง -->
-        <div class="row justify-content-center g-4">
-
-           <!-- นายภิญโญ -->
-<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-    <div class="team-item">
-        <div class="team-body">
-            <img class="img-fluid"
-                 src="img/b22.jpg"
-                 alt=""
-                 style="width:100%; height:100%; object-fit:contain; background:#000;">
-        </div>
-
-        <a class="team-name" href="#"
-           style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-
-            <h5 class="text-uppercase"
-                style="color:#ffffff; margin-bottom:8px;">
-                นายภิญโญ นุ่นแก้ว
-            </h5>
-
-            <h5 class="text-uppercase"
-                style="color:#ffffff; line-height:1.4;">
-                ทนายที่ปรึกษา คดีอาญา
-            </h5>
-        </a>
     </div>
-</div>
-
-<!-- นายสุเมธ -->
-<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-    <div class="team-item">
-        <div class="team-body">
-            <img class="img-fluid"
-                 src="img/c33.jpg"
-                 alt=""
-                 style="width:100%; height:100%; object-fit:contain; background:#000;">
-        </div>
-
-        <a class="team-name" href="#"
-           style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-
-            <h5 class="text-uppercase"
-                style="color:#ffffff; margin-bottom:8px;">
-                นายสุเมธ จรดล
-            </h5>
-
-            <h5 class="text-uppercase"
-                style="color:#ffffff; line-height:1.4;">
-                ทนายคดี ครอบครัว
-            </h5>
-        </a>
-    </div>
-</div>
-
-<!-- นายวิชพนธ์ -->
-<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-    <div class="team-item">
-        <div class="team-body">
-            <img class="img-fluid"
-                 src="img/d444.jpg"
-                 alt=""
-                 style="width:100%; height:100%; object-fit:contain; background:#000;">
-        </div>
-
-        <a class="team-name" href="#"
-           style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-
-            <h5 class="text-uppercase"
-                style="color:#ffffff; margin-bottom:8px;">
-                นายวิชพนธ์ อรุณแจ้ง
-            </h5>
-
-            <h5 class="text-uppercase"
-                style="color:#ffffff; line-height:1.4;">
-                ทนายที่ปรึกษา คดีแพ่ง
-            </h5>
-        </a>
-    </div>
-</div>
-
-
-    <!-- Testimonial Start -->
-<div class="container-fluid py-5 bg-secondary">
-    <div class="container py-5">
-        <div class="text-center">
-            <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                <div class="title-center">
-                    <h5 style="font-size:2.5rem;">เอ็นซี ทรี</h5>
-                    <h1 style="font-size:4rem;">เอ็นซี ทรี ลีเกิล เซอร์วิส</h1>
+    <div class="container-fluid py-5 info-section">
+        <div class="container py-5 text-center">
+            <div class="wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-gold fw-bold text-uppercase tracking-wider">เอ็นซี ทรี</h5>
+                <h2 class="display-4 fw-bold text-white mb-5">สำนักงานกฎหมายหัวหิน ครบวงจร</h2>
+            </div>
+            
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-8">
+                    <div class="p-4 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(201,162,77,0.3);">
+                        <i class="bi bi-quote fa-3x text-gold mb-3 d-block"></i>
+                        <p class="fs-5 fw-light" style="line-height: 1.8;">
+                            สำนักงานกฎหมายให้บริการว่าความและให้คำปรึกษากฎหมาย ครอบคลุมคดีทุกประเภท ได้แก่<br>
+                            <strong class="text-gold">คดีแพ่ง, คดีอาญา, คดีแรงงาน, คดีปกครอง, คดีครอบครัว และคดีอื่น ๆ</strong><br><br>
+                            
+                            <strong>สำนักงานทนายความหัวหิน</strong> ของเราให้บริการปรึกษากฎหมายแก่ลูกค้าชาวไทยและชาวต่างชาติ<br>
+                            (ให้บริการเป็นภาษาไทย – ภาษาอังกฤษ)<br><br>
+                            
+                            <span class="d-inline-block border border-warning rounded px-4 py-2 mt-3">
+                                <i class="bi bi-clock me-2"></i> <strong>เปิดทำการ:</strong> วันจันทร์ – วันศุกร์ | เวลา 09.00 – 16.00 น.
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
-            <div class="testimonial-item text-center"
-                data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
-
-                <p class="fs-5"
-                   style="font-size:2.5rem; line-height:2;">
-สำนักงานกฎหมายให้บริการว่าความและให้คำปรึกษากฎหมาย ครอบคลุมคดีทุกประเภท ได้แก่<br>
-คดีแพ่ง,คดีอาญา,คดีแรงงาน<br>
-
-คดีปกครอง,คดีครอบครัว,และคดีอื่น ๆ<br>
-<br>
-
-สำนักงานกฎหมายหัวหิน ให้บริการปรึกษากฎหมายแก่ลูกค้าชาวไทยและชาวต่างชาติ<br>
-(ให้บริการเป็นภาษาไทย – ภาษาอังกฤษ)<br><br>
-
-เปิดทำการวันจันทร์ – วันศุกร์<br>
-เวลา 09.00 – 16.00 น.
-                </p>
-
-            </div>
-        </div>
     </div>
-</div>
-<!-- Testimonial End -->
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <!-- Navbar: hide on scroll down, show on scroll up -->
     <script>
+        // Remove loading spinner
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('spinner').classList.remove('show');
+            }, 500);
+        });
+
+        // Navbar scroll effect
         let lastScrollTop = 0;
         const navbar = document.getElementById("mainNavbar");
 
         window.addEventListener("scroll", function () {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollTop > lastScrollTop && scrollTop > 120) {
-                navbar.style.top = "-220px";
+            if (scrollTop > 50) {
+                navbar.classList.add('scrolled');
             } else {
-                navbar.style.top = "0";
+                navbar.classList.remove('scrolled');
+            }
+
+            if (scrollTop > lastScrollTop && scrollTop > 150) {
+                navbar.style.transform = "translateY(-100%)";
+            } else {
+                navbar.style.transform = "translateY(0)";
             }
 
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
     </script>
 </body>
-
 </html>
