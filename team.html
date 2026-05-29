@@ -64,12 +64,14 @@
         :root {
             --primary-gold: #C9A24D;
             --dark-bg: #111111;
+            --card-dark: #1a1a1a;
+            --section-dark: #161616;
         }
         
         body {
             font-family: 'Work Sans', sans-serif;
-            background-color: #fcfcfc;
-            color: #333;
+            background-color: var(--dark-bg);
+            color: #eeeeee;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -86,13 +88,13 @@
 
         /* Navbar Enhancements */
         .navbar-custom {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
             transition: all 0.4s ease;
             backdrop-filter: blur(5px);
         }
         .navbar-custom.scrolled {
             background: rgba(17, 17, 17, 0.95);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
         .nav-link {
             color: var(--primary-gold) !important;
@@ -129,7 +131,7 @@
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+            background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%);
             z-index: 1;
         }
         .hero-content {
@@ -153,7 +155,7 @@
         /* Service Section */
         .service-img img {
             border: 5px solid var(--primary-gold);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             transition: transform 0.5s ease;
         }
         .service-item:hover .service-img img {
@@ -171,23 +173,28 @@
             font-size: 1.2rem;
         }
 
-        /* Team Section */
+        /* Team Section Fixes */
         .team-item {
-            background: #fff;
+            background: var(--card-dark);
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.4);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
         }
         .team-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(201, 162, 77, 0.15);
         }
         .team-body {
-            height: 300px;
+            height: 320px;
             background: #000;
             overflow: hidden;
+            position: relative;
+            width: 100%;
         }
         .team-body img {
             width: 100%;
@@ -196,32 +203,49 @@
             transition: transform 0.5s ease;
         }
         .team-item:hover .team-body img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
+        
+        /* Force Description Box strictly below the image container */
         .team-name {
-            display: block;
-            padding: 20px;
-            background: var(--dark-bg);
-            text-decoration: none;
-            border-bottom: 4px solid var(--primary-gold);
+            display: block !important;
+            position: relative !important;
+            inset: auto !important;
+            transform: none !important;
+            padding: 25px 20px !important;
+            background: var(--section-dark) !important;
+            text-decoration: none !important;
+            border-top: 1px solid rgba(201, 162, 77, 0.2) !important;
+            border-bottom: 4px solid var(--primary-gold) !important;
+            flex-grow: 1;
         }
         .team-name h5 {
             color: #fff;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
             transition: color 0.3s ease;
         }
-        .team-name .designation {
+        .team-item:hover .team-name h5 {
             color: var(--primary-gold);
+        }
+        .team-name .designation {
+            color: #aaaaaa;
             font-size: 0.9rem;
-            font-weight: 400;
-            margin-top: 5px;
+            font-weight: 600;
+            margin-top: 8px;
+            letter-spacing: 1px;
         }
 
         /* Testimonial / Info */
         .info-section {
-            background: linear-gradient(rgba(17,17,17,0.9), rgba(17,17,17,0.9)), url('img/testimonial-1.jpg') center center/cover fixed;
-            color: white;
+            background: linear-gradient(rgba(11,11,11,0.92), rgba(11,11,11,0.92)), url('img/testimonial-1.jpg') center center/cover fixed;
+            color: #eeeeee;
+        }
+        
+        hr {
+            border-color: rgba(255, 255, 255, 0.15) !important;
         }
     </style>
 </head>
@@ -232,6 +256,7 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
+
     <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 navbar-custom fixed-top">
         <a href="index.html" class="navbar-brand d-flex align-items-center me-5">
             <img src="img/ll1.jpg" alt="ทนายความหัวหิน สำนักงานกฎหมาย NCTREES Logo" class="rounded shadow-sm">
@@ -243,11 +268,11 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-3 py-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="contact_th.html" class="nav-item nav-link">Contact</a>
+                <a href="index.html" class="nav-item nav-link active">หน้าแรก</a>
+                <a href="contact_th.html" class="nav-item nav-link">ติดต่อเรา</a>
                 
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Change language</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">เปลี่ยนภาษา</a>
                     <div class="dropdown-menu border-0 rounded-0 m-0 shadow" style="background-color: rgba(17, 17, 17, 0.95);">
                         <a href="team.html" class="dropdown-item text-gold fw-bold">TH</a>
                         <a href="index.html" class="dropdown-item text-gold fw-bold">EN</a>
@@ -270,22 +295,24 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                <p class="fs-5 animated slideInUp fw-light" style="line-height: 1.8;">
-    เราให้บริการด้านกฎหมายทั่วราชอาณาจักรไทย ครอบคลุมการดำเนินคดี การว่าความ และการเป็นผู้แทนทางกฎหมายในข้อพิพาททุกประเภท รวมถึงการยื่นฟ้อง การยื่นคำให้การ และการให้บริการทางกฎหมายอย่างครบวงจร
-    <br><br>
-    ขอบเขตงานให้บริการของสำนักงาน ครอบคลุมคดีแพ่งและคดีอาญา กฎหมายครอบครัว กฎหมายแรงงาน และการหย่าร้าง การจัดการมรดกและการดำเนินการด้านมรดก การทวงถามหนี้ คดีเช็ค คดีที่ดินและอสังหาริมทรัพย์ การจดทะเบียนบริษัทและการร่างสัญญา การอนุญาโตตุลาการ และการระงับข้อพิพาททางเลือก
-    <br><br>
-    นอกจากนี้ สำนักงานยังให้บริการให้คำปรึกษาทางกฎหมาย บริการแปลเอกสารทางกฎหมาย และบริการรับรองเอกสารโดยทนายความ (Notarial Services Attorney)
-</p>
+                    <p class="fs-5 animated slideInUp fw-light" style="line-height: 1.8; color: #dddddd;">
+                        เราให้บริการด้านกฎหมายทั่วราชอาณาจักรไทย ครอบคลุมการดำเนินคดี การว่าความ และการเป็นผู้แทนทางกฎหมายในข้อพิพาททุกประเภท รวมถึงการยื่นฟ้อง การยื่นคำให้การ<br>และการให้บริการทางกฎหมายอย่างครบวงจร
+                        <br><br>
+                        ขอบเขตงานให้บริการของสำนักงาน ครอบคลุมคดีแพ่งและคดีอาญา กฎหมายครอบครัว กฎหมายแรงงาน และการหย่าร้าง การจัดการมรดกและการดำเนินการด้านมรดก การทวงถามหนี้ คดีเช็ค คดีที่ดินและอสังหาริมทรัพย์ การจดทะเบียนบริษัทและการร่างสัญญา การอนุญาโตตุลาการ และการระงับข้อพิพาททางเลือก
+                        <br><br>
+                        นอกจากนี้ สำนักงานยังให้บริการให้คำปรึกษาทางกฎหมาย บริการแปลเอกสารทางกฎหมาย และบริการรับรองเอกสารโดยทนายความ (Notarial Services Attorney)
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid py-5 bg-white">
+
+    <!-- Services Section -->
+    <div class="container-fluid py-5" style="background-color: var(--dark-bg);">
         <div class="container py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <h5 class="text-gold fw-bold text-uppercase tracking-wider">บริการของเรา</h5>
-                <h2 class="display-4 fw-bold text-dark">เราช่วยคุณอย่างไร</h2>
+                <h2 class="display-4 fw-bold text-white">เราช่วยคุณอย่างไร</h2>
             </div>
 
             <div class="service-item mb-5">
@@ -296,8 +323,8 @@
                         </div>
                     </div>
                     <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.3s">
-                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
-                        <ul class="list-unstyled service-list text-secondary">
+                        <h3 class="text-uppercase mb-4 text-white fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-light">
                             <li><i class="bi bi-check-circle-fill text-gold"></i> บริการตรวจสอบเอกสาร</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารและการตรวจสอบลายเซ็น</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> การรับรองเอกสารโดยสถานทูต; ติดต่อสถานทูต</li>
@@ -318,8 +345,8 @@
                         </div>
                     </div>
                     <div class="col-md-7 wow fadeInRight" data-wow-delay="0.3s">
-                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
-                        <ul class="list-unstyled service-list text-secondary">
+                        <h3 class="text-uppercase mb-4 text-white fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-light">
                             <li><i class="bi bi-check-circle-fill text-gold"></i> ลายเซ็นรับรองโนตารี</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารสำหรับผู้ที่ทำงานหรือศึกษาต่อต่างประเทศ</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารสำหรับการดำเนินธุรกิจในต่างประเทศ</li>
@@ -340,8 +367,8 @@
                         </div>
                     </div>
                     <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.3s">
-                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
-                        <ul class="list-unstyled service-list text-secondary">
+                        <h3 class="text-uppercase mb-4 text-white fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-light">
                             <li><i class="bi bi-check-circle-fill text-gold"></i> การดำเนินคดีแพ่งและอาญา</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> ความผิดทางอาญา (ฉ้อโกง, ลักทรัพย์, ปล้นทรัพย์, คดีเกี่ยวกับตลาดแลกเปลี่ยนเงินตราต่างประเทศ)</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> บริการรับรองเอกสารสำหรับการดำเนินธุรกิจในต่างประเทศ</li>
@@ -364,8 +391,8 @@
                         </div>
                     </div>
                     <div class="col-md-7 wow fadeInRight" data-wow-delay="0.3s">
-                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
-                        <ul class="list-unstyled service-list text-secondary">
+                        <h3 class="text-uppercase mb-4 text-white fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-light">
                             <li><i class="bi bi-check-circle-fill text-gold"></i> การจดทะเบียนบริษัทและการจัดโครงสร้างองค์กร</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> ข้อพิพาทระหว่างผู้ถือหุ้น กรรมการ และหุ้นส่วน</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> สัญญาทางการค้าและข้อตกลงทางธุรกิจ</li>
@@ -387,8 +414,8 @@
                         </div>
                     </div>
                     <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.3s">
-                        <h3 class="text-uppercase mb-4 text-dark fw-bold">เราสามารถช่วยคุณได้</h3>
-                        <ul class="list-unstyled service-list text-secondary">
+                        <h3 class="text-uppercase mb-4 text-white fw-bold">เราสามารถช่วยคุณได้</h3>
+                        <ul class="list-unstyled service-list text-light">
                             <li><i class="bi bi-check-circle-fill text-gold"></i> การให้คำปรึกษาและการดำเนินคดีเกี่ยวกับกฎหมายการค้าระหว่างประเทศ</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> คดีอาญาเกี่ยวกับการทุจริตและการประพฤติมิชอบ</li>
                             <li><i class="bi bi-check-circle-fill text-gold"></i> ข้อตกลงอนุญาโตตุลาการและการระงับข้อพิพาททางเลือก (ADR)</li>
@@ -402,13 +429,16 @@
 
         </div>
     </div>
-    <div class="container-fluid py-5 bg-light">
+
+    <!-- Our Team Section (Adjusted Layout) -->
+    <div class="container-fluid py-5" style="background-color: var(--section-dark);">
         <div class="container py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <h5 class="text-gold fw-bold text-uppercase tracking-wider">ทีมงานของเรา</h5>
-                <h2 class="display-4 fw-bold text-dark">ทนายความและที่ปรึกษา</h2>
+                <h2 class="display-4 fw-bold text-white">ทนายความและที่ปรึกษา</h2>
             </div>
 
+            <!-- Managing Director Frame -->
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="team-item text-center">
@@ -423,6 +453,7 @@
                 </div>
             </div>
 
+            <!-- Team Members Frame -->
             <div class="row justify-content-center g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item text-center">
@@ -462,6 +493,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Info Section -->
     <div class="container-fluid py-5 info-section">
         <div class="container py-5 text-center">
             <div class="wow fadeInUp" data-wow-delay="0.1s">
@@ -471,7 +504,7 @@
             
             <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-8">
-                    <div class="p-4 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(201,162,77,0.3);">
+                    <div class="p-4 rounded" style="background: rgba(0,0,0,0.8); border: 1px solid rgba(201,162,77,0.3);">
                         <i class="bi bi-quote fa-3x text-gold mb-3 d-block"></i>
                         <p class="fs-5 fw-light" style="line-height: 1.8;">
                             สำนักงานกฎหมายให้บริการว่าความและให้คำปรึกษากฎหมาย ครอบคลุมคดีทุกประเภท ได้แก่<br>
@@ -489,6 +522,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
